@@ -3,6 +3,11 @@ import Banner from '../../components/banner/Banner'
 import PromiseSection from '../../components/promise/Promise'
 import Carouselsection from '../../components/carousel/Carousel'
 import GridSection from '../../components/grid/Grid'
+import TestimonialSection from '../../components/testimonial/Testimonial'
+import BrandSection from '../../components/brand/Brand'
+import AttorneySection from '../../components/attorney/Attorney'
+import AdviceSection from '../../components/advice/Advice'
+import NewsSection from '../../components/news/News'
 
 
 import { faScaleBalanced } from '@fortawesome/free-solid-svg-icons'
@@ -89,6 +94,16 @@ const index = () => {
     <Carouselsection carouselItems={carouselValues}/>
 
     <GridSection clientLinks={gridlinks}/>
+
+    <TestimonialSection/>
+
+    <BrandSection BrandLinks={brandData}/>
+
+    <AttorneySection  AttorneyLinks={attorneyData}/>
+
+    <AdviceSection/>
+
+    <NewsSection NewsLinks={newsData}/>
 
     </>
     )

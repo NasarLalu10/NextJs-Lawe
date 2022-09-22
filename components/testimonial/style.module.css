@@ -1,0 +1,30 @@
+.sideLines {
+    border: 0;
+    border-top: 3px solid;
+    width: 36px;
+    display: inline-block;
+    margin: 7px 12px;
+    border-radius: 13px;
+}
+.iconSize{
+    font-size: 25px;
+}
+.testiSection {
+    background-color: #213454;
+    color: #fff;
+    padding: 90px 0px;
+}
+
+.clientMaleImage {
+    width: 24%;
+    border-radius: 46px;
+}
+
+.clientFemaleImage {
+    width: 24%;
+    border-radius: 46px;
+}
+
+.clientContainer {
+    padding:0px 150px !important;
+}

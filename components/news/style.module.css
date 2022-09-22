@@ -1,0 +1,41 @@
+.sideLines {
+    border: 0;
+    border-top: 3px solid;
+    width: 36px;
+    display: inline-block;
+    margin: 7px 12px;
+    border-radius: 13px;
+}
+.iconSize{
+    font-size: 25px;
+}
+.newsSection {
+    padding: 80px 0px;
+}
+
+.newsBox {
+    margin: 10px 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.newsImage {
+    width: 40px;
+    margin-right: 10px;
+}
+.colContainer {
+    background-color: #eee;
+    padding: 30px;
+}
+.newsImage1 {
+    width: 100%;
+    height: 268px;
+    object-fit: cover;
+}
+
+.newsRow .newsCol:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}

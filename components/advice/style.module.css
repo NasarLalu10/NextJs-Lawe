@@ -1,0 +1,20 @@
+.sideLines {
+    border: 0;
+    border-top: 3px solid;
+    width: 36px;
+    display: inline-block;
+    margin: 7px 12px;
+    border-radius: 13px;
+}
+.iconSize{
+    font-size: 25px;
+}
+.adviceSection {
+    background-color: #213454;
+    padding: 80px 0px;
+
+}
+
+.adviceSection a {
+    color: #fff;
+}

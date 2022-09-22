@@ -1,0 +1,18 @@
+.brandSection {
+    background-color: #b99b5f;
+    padding: 30px 0px;
+}
+.brandContainer {
+    height: 80px;
+    width: 72%;
+    color: #fff;
+}
+.brandRow {
+    height: inherit;
+}
+.brandCol {
+    display: flex;
+}
+.BrandIcon{
+    font-size: 40px;
+}
