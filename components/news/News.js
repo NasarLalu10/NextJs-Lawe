@@ -54,7 +54,7 @@ const NewsSection = ({NewsLinks}) => {
 
                                     <p>criminal laws | july 10,2021</p>
 
-                                    <a href="#" class="orangeText text-decoration-none">
+                                    <a href="#" className="orangeText text-decoration-none">
                                         <FontAwesomeIcon icon={faArrowRight} className="ms-1" />Read More...</a>
 
 

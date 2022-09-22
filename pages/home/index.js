@@ -8,19 +8,14 @@ import BrandSection from '../../components/brand/Brand'
 import AttorneySection from '../../components/attorney/Attorney'
 import AdviceSection from '../../components/advice/Advice'
 import NewsSection from '../../components/news/News'
+import ConsultingSection from '../../components/consulting/Consulting'
+import FooterSection from '../../components/footer/Footer'
 
 
-import { faScaleBalanced } from '@fortawesome/free-solid-svg-icons'
-import { faFireFlameCurved } from '@fortawesome/free-solid-svg-icons'
-import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
-import { faUserGroup } from '@fortawesome/free-solid-svg-icons'
-import { faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
-import { faLeaf } from '@fortawesome/free-solid-svg-icons'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faScaleBalanced,faFireFlameCurved,faTruckMedical,faUserGroup,faMoneyBillWave,faLeaf,faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook ,faTwitter ,faYoutube} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const index = () => {
 
     const menulinks=[
@@ -104,6 +99,10 @@ const index = () => {
     <AdviceSection/>
 
     <NewsSection NewsLinks={newsData}/>
+
+    <ConsultingSection/>
+
+    <FooterSection/>
 
     </>
     )

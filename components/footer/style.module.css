@@ -1,0 +1,112 @@
+.footerSection {
+    padding: 50px 0px;
+    background-color: #526688;
+    color: #fff;
+}
+
+.footer1 h1::before {
+    color: #b89c5e;
+    content: "\f24e";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.footer2 .contact1::before {
+    color: #b89c5e;
+    content: "\f3c5";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;
+}
+
+.footer2 .contact2::before {
+    color: #b89c5e;
+    content: "\f095";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;
+}
+
+.footer2 .contact3::before {
+    color: #b89c5e;
+    content: "\f0e0";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;
+}
+
+.footer2 .contact4::before {
+    color: #b89c5e;
+    content: "\f017";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;
+}
+
+.footer3 p::before {
+    color: #b89c5e;
+    content: "\f061 ";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;
+}
+
+.footer4 li::before {
+    color: #b89c5e;
+    content: "\f054 ";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    margin-right: 10px;
+}
+
+.hrLine {
+    width: 50px;
+    border: 1px solid #b89c5e;
+    color: #b89c5e;
+}
+
+.footerSection ul li {
+    margin-bottom: 15px;
+}
