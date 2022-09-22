@@ -17,9 +17,9 @@
     text-rendering: auto;
 }
 
-.footer2 .contact1::before {
+.footer2 .contact1::before {    
     color: #b89c5e;
-    content: "\f3c5";
+    content: url("/public/images/proimage.jpg");
     font-weight: 900;
     font-family: "Font Awesome 6 Free";
     -webkit-font-smoothing: antialiased;
@@ -109,4 +109,17 @@
 
 .footerSection ul li {
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+.footerRow{
+    text-align: center;
+}
+.hrLine {
+    margin: 0px 75px;
+    width: 200px;
+    border: 1px solid #b89c5e;
+    color: #b89c5e;
+}
 }

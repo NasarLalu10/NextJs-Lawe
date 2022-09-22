@@ -12,10 +12,10 @@
 }
 
 .promRow{
-    padding:30px;
     height: inherit;
 }
 .promSection{
+    padding: 50px 0px;
     position: relative;
     width: 77%;
     margin: 0 auto;
@@ -23,4 +23,36 @@
 }
 .promContainer{
     padding: 0px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+/* .promContainer {
+    margin: 30px 0px;
+    padding-top: 20px;
+} */
+.promRow2{
+    text-align: center;
+}
+.promCol {
+    margin: 10px 0px;
+}
+.promSection {
+    padding: 0px;
+}
+.promH1{
+    margin:10px 0px;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .promContainer {
+        width: 84% !important;
+        height: 138px;
+        position: absolute;
+        left: 12%;
+        top: -9%;
+    }
 }

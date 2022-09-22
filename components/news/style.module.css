@@ -39,3 +39,17 @@
     cursor: pointer;
     transition: all .3s ease 0s;
 }
+@media only screen and (max-width: 600px) {
+
+    .newsCol {
+        padding: 15px;
+    }
+
+    .newsSection {
+        padding: 20px 0px;
+    }
+
+    .newsRow {
+        padding: 15px;
+    }
+}

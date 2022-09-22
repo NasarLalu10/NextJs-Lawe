@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .navbarBrand{
+    margin-left: 25px;
+}
+.navSocials i{
+    margin: 0px !important;
+}
+.navCol{
+    max-width: 33% !important;
+}
+.navbar-collapse{
+    background-color: #eee;
+    margin-top: 15px;
+}
+}

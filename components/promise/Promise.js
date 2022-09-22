@@ -18,7 +18,7 @@ const PromiseSection = () => {
 
             </div>
 
-            <div className="col-md-4 promCol">
+            <div className={styles.promCol + " col-md-4"}>
 
               <button type="button" className=" btn rounded-0 orangeBg">Free Consultant</button>
 
@@ -30,7 +30,7 @@ const PromiseSection = () => {
 
       </section>
       <div className={styles.pdng + " container"}>
-        <div className="row">
+        <div className={styles.promRow2 + " row"}>
           <div className="col-md-4 offset-md-2">
 
             <img src="/images/proimage.jpg" className={styles.promiseImage}></img>
@@ -38,9 +38,9 @@ const PromiseSection = () => {
           </div>
 
           <div className="col-md-6">
-            <h1>Our Promise?</h1>
+            <h1 className={styles.promH1}>Our Promise?</h1>
 
-            <p className={styles.txtOrange + ' ' + styles.Txtmb}>Officia ad ipsum consequat quis ipsum eu fugiat voluptate.</p>            <p>
+            <p className={styles.Txtmb + " orangeText"}>Officia ad ipsum consequat quis ipsum eu fugiat voluptate.</p>            <p>
               Do mollit esse nisi labore. Mollit non consectetur irure
               reprehenderit do ut Lorem sit sunt id irure quis. In cupidatat
               labore tempor et dolor quis mollit ex consequat. In voluptate ut
@@ -53,7 +53,7 @@ const PromiseSection = () => {
               enim deserunt in ad et.
             </p>
 
-            <p className={styles.txtOrange + ' ' + styles.Txtmt}>
+            <p className={styles.Txtmt + " orangeText"}>
               Fugiat ullamco ullamco in et exercitation. Excepteur proident Sunt
               enim deserunt in ad et.
             </p>

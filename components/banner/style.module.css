@@ -9,3 +9,9 @@
     height: inherit;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+.bannerCol {
+    text-align: center;
+}
+}

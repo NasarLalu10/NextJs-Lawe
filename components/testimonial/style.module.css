@@ -28,3 +28,18 @@
 .clientContainer {
     padding:0px 150px !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .clientContainer {
+        padding: 0px !important;
+        text-align: center;
+    }
+
+    .clientImages {
+        text-align: center;
+    }
+
+    .clientImage {
+        justify-content: center;
+    }
+}

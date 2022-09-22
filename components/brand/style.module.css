@@ -16,3 +16,20 @@
 .BrandIcon{
     font-size: 40px;
 }
+@media only screen and (max-width: 600px) {
+    .brandSection {
+        padding: 60px 0px;
+    }
+
+    .brandContainer {
+        height: inherit;
+    }
+
+    .brandCol {
+        display: block !important;
+        text-align: center;
+    }
+    .brandCol{
+        margin: 20px 0px;
+    }
+}

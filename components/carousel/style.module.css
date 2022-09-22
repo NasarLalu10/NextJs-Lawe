@@ -20,4 +20,17 @@
     margin: 18px;
     color: darkorange;
 }
+@media only screen and (max-width: 600px) {
 
+.carouselRow {
+    height: inherit;
+}
+
+.carouselCol {
+    justify-content: center;
+}
+
+.carouselSection {
+    padding: 40px 0px;
+}
+}

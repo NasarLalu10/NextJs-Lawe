@@ -22,7 +22,7 @@ const AttorneySection = ({ AttorneyLinks }) => {
                                 <hr className={styles.sideLines} />
                             </div>
 
-                            <p>Officia ad ipsum consequat quis ipsum eu fugiat voluptate.</p>
+                            <p className={styles.attorneyP}>Officia ad ipsum consequat quis ipsum eu fugiat voluptate.</p>
 
                         </div>
 

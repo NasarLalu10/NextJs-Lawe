@@ -18,3 +18,18 @@
 .adviceSection a {
     color: #fff;
 }
+@media only screen and (max-width: 600px) {
+    .adviceCol div {
+        display: block !important;
+        text-align: center;
+    }
+
+    .adviceCol div h3 {
+        margin-left: 0px !important;
+        margin-top: 5px;
+    }
+
+    .adviceSection {
+        padding: 35px 0px;
+    }
+}

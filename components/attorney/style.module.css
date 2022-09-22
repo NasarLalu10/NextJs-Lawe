@@ -27,3 +27,16 @@
 .iconPd{
     padding: 6px 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .attorneyCol {
+        text-align: center;
+        padding: 30px;
+    }
+    .attorneySocials {
+        justify-content: center;
+    }
+    .attorneyRow {
+        padding: 15px;
+    }
+}

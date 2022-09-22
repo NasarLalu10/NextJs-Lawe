@@ -58,3 +58,27 @@ button{
     background: black;
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+  .mainRow {
+      text-align: center;
+  }
+
+  .mainSection {
+      padding: 0px;
+  }
+
+  
+  .inCol p{
+      text-align: center !important;
+  }
+ 
+  .hrLine {
+      margin: 0px 169px;
+      width: 140px;
+      border: 1px solid #b89c5e;
+      color: #b89c5e;
+  }
+  
+}
