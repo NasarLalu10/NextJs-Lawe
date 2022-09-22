@@ -1,14 +1,48 @@
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-
+h1{
+font-weight: 700;
+}
+p{
+  font-weight: 500;
+}
 a {
-  color: inherit;
+  color:inherit ;
   text-decoration: none;
+}
+button{
+  font-weight: 500;
+}
+.nav-link{
+  font-weight: 500;
+}
+.txtOrange{
+  color: #c2a975;
+}
+.txtOrangeBg{
+  background-color: #c2a975;
+}
+.orangeText{
+  color: #b89c5e;
+}
+.orangeBg{
+  background: #b89c5e ;
+}
+.sideLines {
+  border: 0;
+  border-top: 3px solid;
+  width: 36px;
+  display: inline-block;
+  margin: 7px 12px;
+  border-radius: 13px;
+}
+.iconSize{
+  font-size: 25px;
 }
 
 * {

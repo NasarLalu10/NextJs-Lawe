@@ -1,0 +1,23 @@
+.carouselSection {
+    background: #213454;
+    color: #fff;
+}
+
+.carouselRow {
+    height: 200px;
+}
+.carouselCol{
+    justify-content: center;
+}
+.carouselIcon{
+    margin: 0 30px;
+}
+.carouselIcon  {
+    display: var(--fa-display, inline-block);
+    font-size: 65px;
+    overflow: visible;
+    vertical-align: -0.125em;
+    margin: 18px;
+    color: darkorange;
+}
+

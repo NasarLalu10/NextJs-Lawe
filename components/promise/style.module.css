@@ -1,0 +1,26 @@
+.py80{
+    padding: 80px 0px;
+}
+.promiseImage{
+    width: 250px;
+}
+.Txtmb{
+    margin-bottom: 25px;
+}
+.Txtmt{
+    margin-top: 35px;
+}
+
+.promRow{
+    padding:30px;
+    height: inherit;
+}
+.promSection{
+    position: relative;
+    width: 77%;
+    margin: 0 auto;
+    top: -50px;
+}
+.promContainer{
+    padding: 0px 30px;
+}

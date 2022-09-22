@@ -1,0 +1,11 @@
+.bannersection{
+    background: url(/images/banner-image.jpg);
+    height: 91vh;
+}
+.bannerContainer{
+    height: inherit;
+}
+.bannerRow{
+    height: inherit;
+    align-items: center;
+}

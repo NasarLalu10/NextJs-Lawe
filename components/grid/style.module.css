@@ -1,0 +1,55 @@
+.sideLines {
+    border: 0;
+    border-top: 3px solid;
+    width: 36px;
+    display: inline-block;
+    margin: 7px 12px;
+    border-radius: 13px;
+}
+.iconSize{
+    font-size: 25px;
+}
+.gridIcon {
+    font-size: 40px;
+}
+.gridSection {
+    padding: 80px 0px;
+}
+.gridBox {
+    height: 222px;
+    margin: 10px;
+    color: #fff;
+}
+
+.gridContainer {
+    padding: 23px 0px;
+}
+
+.gridBox:hover::before {
+    background-color: #b89c5e !important;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    opacity: 1;
+}
+
+.gridBox {
+    background: url(/images/proimage.jpg);
+    opacity: 0.5;
+    position: relative;
+    background-size: cover;
+}
+
+.gridBox::before {
+    content: "";
+    background-color: #364763 !important;
+    opacity: 0.5;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    z-index: -1;
+}
