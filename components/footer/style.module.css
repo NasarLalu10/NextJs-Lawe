@@ -4,7 +4,7 @@
     color: #fff;
 }
 
-.footer1 h1::before {
+/* .footer1 h1::before {
     color: #b89c5e;
     content: "\f24e";
     font-weight: 900;
@@ -15,9 +15,9 @@
     font-variant: normal;
     line-height: 1;
     text-rendering: auto;
-}
+} */
 
-.footer2 .contact1::before {    
+/* .footer2 .contact1::before {
     color: #b89c5e;
     content: url("/public/images/proimage.jpg");
     font-weight: 900;
@@ -85,9 +85,9 @@
     line-height: 1;
     text-rendering: auto;
     margin-right: 10px;
-}
+} */
 
-.footer4 li::before {
+/* .footer4 ul li::before {
     color: #b89c5e;
     content: "\f054 ";
     font-weight: 900;
@@ -99,7 +99,8 @@
     line-height: 1;
     text-rendering: auto;
     margin-right: 10px;
-}
+} */
+
 
 .hrLine {
     width: 50px;
@@ -113,13 +114,17 @@
 
 @media only screen and (max-width: 600px) {
 
-.footerRow{
-    text-align: center;
-}
-.hrLine {
-    margin: 0px 75px;
-    width: 200px;
-    border: 1px solid #b89c5e;
-    color: #b89c5e;
-}
+    .footerRow {
+        text-align: center;
+    }
+    .hrLine {
+        margin: 0px 118px !important;
+        width: 140px;
+        border: 1px solid #b89c5e;
+        color: #b89c5e;
+    }
+    
+    .footer1, .footer2, .footer3, .footer4{
+        padding: 20px 0px;
+    }
 }

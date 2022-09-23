@@ -73,12 +73,5 @@ button{
   .inCol p{
       text-align: center !important;
   }
- 
-  .hrLine {
-      margin: 0px 169px;
-      width: 140px;
-      border: 1px solid #b89c5e;
-      color: #b89c5e;
-  }
   
 }

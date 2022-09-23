@@ -1,6 +1,6 @@
 import styles from "./style.module.css"
-
 import { faFacebook ,faTwitter ,faYoutube ,faGoogle} from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight,faChevronRight,faLocationDot,faPhone,faEnvelope,faClock,faScaleBalanced} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const FooterSection = () => {
@@ -16,7 +16,7 @@ const FooterSection = () => {
 
                         <div className={styles.footer1 + " col-md-3"}>
 
-                            <h1>LAWE</h1>
+                            <h1><FontAwesomeIcon icon={faScaleBalanced} className="me-3 orangeText"/>LAWE</h1>
                             <p className="orangeText">Lawyer & Attorney</p>
 
                             <p className="mb-5">Do mollit esse nisi labore. Mollit non consectetur irure reprehenderit do ut Lorem sit sunt id
@@ -37,12 +37,12 @@ const FooterSection = () => {
                         <div className={styles.footer2 + " col-md-3"}>
 
                             <h3 className="orangeText">Contact Info</h3>
-                            <hr className="hrLine" />
+                            <hr className={styles.hrLine} />
                             <ul className="list-unstyled">
-                                <li className={styles.contact1}>99 St.Jombala Park pekarumbu,indonesia</li>
-                                <li className={styles.contact2}>(0761) 654-124345</li>
-                                <li className={styles.contact3}>hell- satolawe@lawyer.com</li>
-                                <li className={styles.contact4}>Mon-Sat 09:00 - 17:00</li>
+                                <li className={styles.contact1}><FontAwesomeIcon icon={faLocationDot} className="me-3 orangeText"/>99 St.Jombala Park pekarumbu,indonesia</li>
+                                <li className={styles.contact2}><FontAwesomeIcon icon={faPhone} className="me-3 orangeText"/>(0761) 654-124345</li>
+                                <li className={styles.contact3}><FontAwesomeIcon icon={faEnvelope} className="me-3 orangeText"/>hell- satolawe@lawyer.com</li>
+                                <li className={styles.contact4}><FontAwesomeIcon icon={faClock} className="me-3 orangeText"/>Mon-Sat 09:00 - 17:00</li>
                             </ul>
 
                         </div>
@@ -50,22 +50,22 @@ const FooterSection = () => {
                         <div className={styles.footer3 + " col-md-3"}>
 
                             <h3 className="orangeText">Practice Areas</h3>
-                            <hr className="hrLine" />
-                            <p>Single Practice</p>
+                            <hr className={styles.hrLine} />
+                            <p><FontAwesomeIcon icon={faArrowRight} className="me-3 orangeText"/>Single Practice</p>
 
                         </div>
 
                         <div className={styles.footer4 + " col-md-3"}>
 
                             <h3 className="orangeText">Usefull Links</h3>
-                            <hr className="hrLine" />
+                            <hr className={styles.hrLine} />
                             <ul className="list-unstyled">
-                                <li>About Us</li>
-                                <li>Attorneys</li>
-                                <li>Case Study</li>
-                                <li>Practice Areas</li>
-                                <li>Contact</li>
-                                <li>Faq</li>
+                                <li><FontAwesomeIcon icon={faChevronRight} className="me-3 orangeText"/>About Us</li>
+                                <li><FontAwesomeIcon icon={faChevronRight} className="me-3 orangeText"/>Attorneys</li>
+                                <li><FontAwesomeIcon icon={faChevronRight} className="me-3 orangeText"/>Case Study</li>
+                                <li><FontAwesomeIcon icon={faChevronRight} className="me-3 orangeText"/>Practice Areas</li>
+                                <li><FontAwesomeIcon icon={faChevronRight} className="me-3 orangeText"/>Contact</li>
+                                <li><FontAwesomeIcon icon={faChevronRight} className="me-3 orangeText"/>Faq</li>
                             </ul>
 
                         </div>

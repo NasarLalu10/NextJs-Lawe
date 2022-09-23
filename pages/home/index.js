@@ -1,3 +1,4 @@
+import NavTopSection from '../../components/navTop/NavTop'
 import Header from '../../components/header/Header'
 import Banner from '../../components/banner/Banner'
 import PromiseSection from '../../components/promise/Promise'
@@ -80,6 +81,8 @@ const index = () => {
 
     return (
     <>
+    <NavTopSection/>
+
     <Header toplinks={menulinks}/>
 
     <Banner/>
