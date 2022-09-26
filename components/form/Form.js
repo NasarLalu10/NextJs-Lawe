@@ -1,61 +1,139 @@
 import { useState } from "react";
-const Form = () => {
-    const [count, setCount] = useState(0);
 
-    let add=()=>{
-        setCount(count + 1);
+const Form = () => {
+
+    const [data, setdata] = useState([]);
+
+    let email = '';
+    let password = '';
+    let number = '';
+    let message = '';
+
+
+    function save(e) {
+        let user = {
+            email: email,
+            password: password,
+            number: number,
+            message: message
+        };
+
+        setdata(data => [...data, user]);
     }
-    let sub=()=>{
-        setCount(count - 1);
-    }
+
+
     return (
 
         <>
-            {/* <>
+
+            <form>
                 <div className="container">
-                    <div className="row align-items-center my-5">
+                    <div className="row my-5">
                         <div className="col-md-6">
 
-                            <div className="mb-3">
-                                <label for="exampleInputEmail1" className="form-label">Email address</label>
-                                <input type="email" onChange={(event) => setState({email: event.target.value})} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <div>
+                                <div className="mb-3">
+                                    <label className="form-label">Email address</label>
+
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        aria-describedby="emailHelp"
+                                        name="mail"
+                                        placeholder="Enter Your Email"
+                                        onChange={(e) => { email = e.target.value }}
+                                    />
+
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Password</label>
+
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        name="password"
+                                        placeholder="Enter Your Password"
+                                        onChange={(e) => { password = e.target.value }}
+                                    />
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Phone Number</label>
+
+                                    <input
+                                        type="number"
+                                        className="form-control"
+                                        name="number"
+                                        placeholder="enter your number"
+                                        onChange={(e) => { number = e.target.value }}
+                                    />
+                                </div>
+
+                                <div className="mb-3">
+                                    <label className="form-label">Message</label>
+
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        name="message"
+                                        placeholder="send us a message"
+                                        onChange={(e) => { message = e.target.value }}
+                                    />
+                                </div>
                             </div>
 
-                            <div className="mb-3">
-                                <label for="exampleInputPassword1" className="form-label">Password</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1" />
-                            </div>
+                            <button type="button" className="btn btn-primary" onClick={save}>Submit</button>
 
-                            <div className="mb-3">
-                                <label for="exampleInputPassword1" className="form-label">Phone Number</label>
-                                <input type="number" className="form-control" id="exampleInputPassword1" />
-                            </div>
+                            <button type="button" className="btn btn-primary mx-3">Update</button>
 
-                            <div className="mb-3">
-                                <label for="exampleInputPassword1" className="form-label">Message</label>
-                                <input type="text" className="form-control" id="exampleInputPassword1" />
-                            </div>
+                            <button type="button" className="btn btn-primary mx-3">Delete</button>
 
+                            <button type="button" className="btn btn-primary mx-3">View</button>
 
-                            <button type="submit" onClick={PrintData} className="btn btn-primary ">Submit</button>
-                            <button type="submit" className="btn btn-primary mx-3">Update</button>
-                            <button type="submit" className="btn btn-primary mx-3">Delete</button>
-                            <button type="submit" className="btn btn-primary mx-3">View</button>
                         </div>
+
+
+
                         <div className="col-md-6">
-                            <h1>{displayData }</h1>
+                            <div className="container">
+                                <div className="row">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Mail id</th>
+                                                <th scope="col">Password</th>
+                                                <th scope="col">Number</th>
+                                                <th scope="col">Message</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {data?.map((item, i) => {
+
+                                                return (
+
+                                                    <tr key={i}>
+                                                        <td>{item.email}</td>
+                                                        <td>{item.password}</td>
+                                                        <td>{item.number}</td>
+                                                        <td>{item.message}</td>
+
+                                                    </tr>
+                                                )
+
+                                            })}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </> */}
 
-            <div >
+            </form>
 
-                <button type="submit" className="btn btn-primary m-3" onClick={ add }>ADD</button>
-                <button type="submit" className="btn btn-primary m-3" onClick={ sub }>SUB</button>
-                <h1>{count}</h1>
-
-            </div>
 
         </>
     )
