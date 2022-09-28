@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Form = () => {
 
@@ -10,15 +10,24 @@ const Form = () => {
     let message = '';
 
 
-    function save(e) {
-        let user = {
+    function add() {
+        let user =
+        {
             email: email,
             password: password,
             number: number,
             message: message
         };
 
-        setdata(data => [...data, user]);
+        var newList = data.concat(user)
+        console.log("list add", newList)
+        setdata(newList);
+    }
+
+    function del() {
+        data.splice(0, 1)
+        setdata([...data])
+        
     }
 
 
@@ -41,6 +50,7 @@ const Form = () => {
                                         aria-describedby="emailHelp"
                                         name="mail"
                                         placeholder="Enter Your Email"
+                                        id="mailId"
                                         onChange={(e) => { email = e.target.value }}
                                     />
 
@@ -53,6 +63,7 @@ const Form = () => {
                                         type="password"
                                         className="form-control"
                                         name="password"
+                                        autoComplete="on"
                                         placeholder="Enter Your Password"
                                         onChange={(e) => { password = e.target.value }}
                                     />
@@ -83,13 +94,9 @@ const Form = () => {
                                 </div>
                             </div>
 
-                            <button type="button" className="btn btn-primary" onClick={save}>Submit</button>
+                            <button type="button" className="btn btn-primary me-4" onClick={add}>ADD</button>
 
-                            <button type="button" className="btn btn-primary mx-3">Update</button>
-
-                            <button type="button" className="btn btn-primary mx-3">Delete</button>
-
-                            <button type="button" className="btn btn-primary mx-3">View</button>
+                            <button type="button" className="btn btn-primary mx-4">EDIT</button>
 
                         </div>
 
@@ -98,7 +105,7 @@ const Form = () => {
                         <div className="col-md-6">
                             <div className="container">
                                 <div className="row">
-                                    <table class="table">
+                                    <table className="table">
                                         <thead>
                                             <tr>
                                                 <th scope="col">Mail id</th>
@@ -108,7 +115,7 @@ const Form = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {data?.map((item, i) => {
+                                            {data.map((item, i) => {
 
                                                 return (
 
@@ -118,10 +125,16 @@ const Form = () => {
                                                         <td>{item.number}</td>
                                                         <td>{item.message}</td>
 
+                                                        <td>
+                                                        <button type="button" className="btn btn-primary mx-4" onClick={del}>DELETE</button>
+                                                        </td>
+
                                                     </tr>
                                                 )
 
                                             })}
+
+                                            
 
                                         </tbody>
                                     </table>
