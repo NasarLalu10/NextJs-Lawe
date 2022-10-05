@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 
 const Form = () => {
 
@@ -8,27 +8,64 @@ const Form = () => {
     let password = '';
     let number = '';
     let message = '';
-
+    let counts = '';
 
     function add() {
+
         let user =
         {
             email: email,
             password: password,
             number: number,
-            message: message
+            message: message,
+            counts: counts
         };
 
         var newList = data.concat(user)
         console.log("list add", newList)
         setdata(newList);
+
+        document.getElementById('mailId').value = '';
+        document.getElementById('passwordId').value = '';
+        document.getElementById('phoneId').value = '';
+        document.getElementById('messageId').value = '';
+        document.getElementById('indexId').value = '';
     }
 
-    function del() {
-        data.splice(0, 1)
+    function del(i) {
+        data.splice(i, 1)
         setdata([...data])
-        
     }
+
+    const edit = (index) => {
+
+        let dataState = [...data];
+        let dataElement = { ...dataState[index] };
+
+        document.getElementById('mailId').value = dataElement.email;
+        document.getElementById('passwordId').value = dataElement.password;
+        document.getElementById('phoneId').value = dataElement.number;
+        document.getElementById('messageId').value = dataElement.message;
+        document.getElementById('indexId').value = index;
+
+    }
+
+    const update = () => {
+        let index = document.getElementById('indexId').value;
+        let dataState = [...data];
+        let dataElement = { ...dataState[index] };
+
+        dataElement.email = document.getElementById('mailId').value;
+        dataElement.password = document.getElementById('passwordId').value;
+        dataElement.number = document.getElementById('phoneId').value;
+        dataElement.message = document.getElementById('messageId').value;
+
+        dataState[index] = dataElement;
+        setdata(dataState);
+
+    }
+
+
 
 
     return (
@@ -52,6 +89,7 @@ const Form = () => {
                                         placeholder="Enter Your Email"
                                         id="mailId"
                                         onChange={(e) => { email = e.target.value }}
+
                                     />
 
                                 </div>
@@ -65,7 +103,9 @@ const Form = () => {
                                         name="password"
                                         autoComplete="on"
                                         placeholder="Enter Your Password"
+                                        id="passwordId"
                                         onChange={(e) => { password = e.target.value }}
+
                                     />
                                 </div>
 
@@ -77,7 +117,9 @@ const Form = () => {
                                         className="form-control"
                                         name="number"
                                         placeholder="enter your number"
+                                        id="phoneId"
                                         onChange={(e) => { number = e.target.value }}
+
                                     />
                                 </div>
 
@@ -89,14 +131,25 @@ const Form = () => {
                                         className="form-control"
                                         name="message"
                                         placeholder="send us a message"
+                                        id="messageId"
                                         onChange={(e) => { message = e.target.value }}
                                     />
                                 </div>
+
+                                <div className="mb-3">
+                                    <input
+                                        type="hidden"
+                                        className="form-control"
+                                        name="id"
+                                        id="indexId"
+                                        placeholder="user-count"
+                                    />
+                                </div>
+
                             </div>
 
-                            <button type="button" className="btn btn-primary me-4" onClick={add}>ADD</button>
-
-                            <button type="button" className="btn btn-primary mx-4">EDIT</button>
+                            <button type="button" className="btn btn-primary me-4" onClick={add}>SUBMIT</button>
+                            <button type="button" className="btn btn-primary me-4" onClick={() => update()}>Update</button>
 
                         </div>
 
@@ -112,6 +165,8 @@ const Form = () => {
                                                 <th scope="col">Password</th>
                                                 <th scope="col">Number</th>
                                                 <th scope="col">Message</th>
+                                                <th scope="col">Actions</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -120,21 +175,26 @@ const Form = () => {
                                                 return (
 
                                                     <tr key={i}>
+        
                                                         <td>{item.email}</td>
                                                         <td>{item.password}</td>
                                                         <td>{item.number}</td>
                                                         <td>{item.message}</td>
 
                                                         <td>
-                                                        <button type="button" className="btn btn-primary mx-4" onClick={del}>DELETE</button>
+                                                            <button type="button" className="btn btn-primary mx-4" onClick={()=>del(i)}>DELETE</button>
+                                                        </td>
+
+                                                        <td>
+                                                            <button type="button" className="btn btn-primary mx-4" onClick={() => edit(i)} >EDIT</button>
                                                         </td>
 
                                                     </tr>
-                                                )
+                                                );
 
                                             })}
 
-                                            
+
 
                                         </tbody>
                                     </table>
